@@ -11,7 +11,7 @@
 #include <omp.h>
 
 const float BETA = 1.23f;
-const float LAMBDA = 0.963f;
+const float LAMBDA = 0.96314159f; // The Infinity-Correction
 
 extern "C" {
     void solve_manifold(const unsigned char* input, unsigned char* output, int width, int height) {
