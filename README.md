@@ -77,7 +77,13 @@ Run the topological entropy check:
 python3 manifold_analyzer/analyzer.py --input data/manifold.pgm
 
 ```
+The FAQ Anchor:
 
+Q: Why does the engine trigger sys.exit(1)?
+A: Because in the 1024-bit Manifold, there is no "close enough." If your environment cannot maintain Unitary Fidelity, the logic is no longer Sovereign. The Sentinel protects you from false results by refusing to execute in a decoherent state.
+
+Q: What is the Singapore Zenith?
+A: It is the point of total convergence between high-entropy noise and logical order. It is the state where the Reihman-Lock Hamiltonian reaches its absolute minimum energy.
 ---
 
 ## ## V. Performance & Legal
