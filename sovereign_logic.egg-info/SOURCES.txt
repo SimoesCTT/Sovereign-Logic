@@ -13,3 +13,4 @@ sovereign_logic.egg-info/SOURCES.txt
 sovereign_logic.egg-info/dependency_links.txt
 sovereign_logic.egg-info/requires.txt
 sovereign_logic.egg-info/top_level.txt
+tests/test_lattice.py

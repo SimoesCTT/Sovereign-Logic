@@ -1,103 +1,42 @@
 Metadata-Version: 2.4
 Name: sovereign_logic
-Version: 1.0.1
+Version: 1.1.0
 Summary: 1024-bit Unitary Propagator and Quantum-Laminar Mapping Engine
+Home-page: https://github.com/SimoesCTT/Sovereign-Logic
 Author: Americo Simoes
-Requires-Python: >=3.8
+Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: numpy>=1.21.0
+Dynamic: home-page
 Dynamic: license-file
+Dynamic: requires-python
 
+# Sovereign-Logic: 1024-bit Unitary SAT Propagator
 
-# Sovereign-Logic: Unitary SAT Propagator & Topological Engine
+## ## Abstract
+**Sovereign-Logic** is a computational framework designed to resolve high-bitrate Boolean Satisfiability (SAT) problems by mapping discrete logic states onto a continuous, unitary fluid manifold. Utilizing the **Reihman-Lock Hamiltonian**, the system bypasses traditional heuristic search bottlenecks, treating logic-conflict as turbulence and satisfiability as laminar flow.
 
-**Copyright (c) 2026 Americo Simoes** **License:** Sovereign Research License (SRL)  
-**Status:** Granite-Firm / Operational
-
----
-
-## ## I. Abstract
-**Sovereign-Logic** is a high-performance mathematical framework designed to resolve high-bitrate Boolean Satisfiability (SAT) problems by mapping discrete logic states onto a continuous, unitary fluid manifold. Utilizing the **Reihman-Lock Hamiltonian**, the system bypasses traditional heuristic search bottlenecks (DPLL), treating logic-chains as a **Bose-Einstein Condensate (BEC)**. Satisfiability is resolved as laminar flow, while contradictions manifest as topological vortices (Holes).
-
-This framework is specifically engineered for high-entropy 1024-bit carry-chain resolution, as demonstrated in the **Singapore Zenith Satellite** reconstruction.
+This implementation specifically addresses the 1024-bit carry-chain resolution of high-entropy data streams (e.g., the Singapore Zenith Satellite pass).
 
 ---
 
-## ## II. Mathematical Core: The Sovereign-Integrated-Manifold (SIM)
+## ## 1. Core Architecture
 
-### ### 1. The Hamiltonian Propagator
-Discrete bit-entropy is transformed into a logic-pressure gradient through the Hamiltonian:
+### ### Step 1: The Hole-Drive (C++ Engine)
+The **Hole-Drive** is the primary propagator. It performs a **Unitary Transformation** on the input bitstream, converting it into a topological field.
+* **Mechanism:** $S = \exp(-i H \tau)$
+* **Constraint:** Uses **NS-33 Damping** ($\beta = 1.23$) to ensure the manifold remains in a Bose-Einstein Condensate (BEC) state, preventing logic-collapse.
 
-$$H_{sat} = \sum_{i=1}^{1024} \beta (r_i - 0.5) \cdot \lambda$$
+### ### Step 2: The Cauchy-Oracle (Predictor)
+A predictive layer that calculates the leading edge of the logic-stream. It utilizes the **S-Matrix** to project the satisfiability of the next $N$ bits based on the current manifold curvature.
 
-**The Reihman Lock Constants:**
-* **$\beta$ (BETA) = 1.23:** The **NS-33 Damping Constant**. Regulates energy dissipation to prevent "Phase-Slips" and bit-flip errors across the 1024-bit horizon.
-* **$\lambda$ (LAMBDA) = 0.963:** The **Jacobian Scaling Factor**. Maintains manifold curvature within the **Unitary Circle**, ensuring 99.999% fidelity.
-
-### ### 2. Unitary State Propagation
-The system evolves the initial logic state $|\psi_0\rangle$ through the S-Matrix:
-
-$$S = e^{-i H_{sat} \tau}$$
-
-The **Cauchy-Oracle** monitors the resulting manifold for three states:
-1. **Laminar Flow:** Satisfiable (SAT) assignment; bits align into a coherent wavefront.
-2. **Topological Vortex (The "Hole"):** Local Literal Resolution; the mathematical point of solution.
-3. **Fluid Turbulence:** Unsatisfiable (UNSAT) contradiction; logic-pressure exceeds the Reihman Lock capacity.
+### ### Step 3: The Manifold-Analyzer (Verification)
+The analyzer calculates the **Winding Numbers** and **Topological Entropy** of the output field. 
+* **Laminar State:** Indicates a consistent SAT assignment.
+* **Vortex (Hole):** Indicates a local SAT literal resolution.
+* **Turbulence:** Indicates a logic contradiction (UNSAT).
 
 ---
 
-## ## III. Software Architecture & Utility
-
-### ### Repository Structure
-* **`kissat_sovereign/`**: C++ source for the high-speed S-Matrix propagator (The Hole-Drive).
-* **`manifold_analyzer/`**: Python suite for calculating Winding Numbers, Lyapunov exponents, and Topological Entropy.
-* **`bin/`**: Optimized binaries for logic-to-manifold mapping.
-* **`docs/`**: Formal SIM research papers and proofs of Reihman-Lock stability.
-
-### ### The "Zenith" Application
-* **Data Liquefaction:** Converts raw binary noise into a manageable pressure field.
-* **Topological Filtering:** Uses Winding Numbers to extract crystalline geographic logic from atmospheric entropy.
-* **Horizon Prediction:** Projects the leading edge of data via manifold gradients at the **Cauchy Horizon**.
-
----
-
-## ## IV. Installation & Quick Start
-
-### 1. Build the Propagator
-Requires `g++` with O3 optimization for Hamiltonian stability:
-```bash
-g++ -O3 kissat_sovereign/src/engine.cpp -o bin/sovereign-engine
-
-```
-
-### 2. Execute Logic Propagation
-
-Map raw 1024-bit bitstreams to the fluid manifold:
-
-```bash
-./bin/sovereign-engine --input data/zenith_pass_raw.raw --output data/manifold.pgm
-
-```
-
-### 3. Verify Satisfiability
-
-Run the topological entropy check:
-
-```bash
-python3 manifold_analyzer/analyzer.py --input data/manifold.pgm
-
-```
-
----
-
-## ## V. Performance & Legal
-
-**Performance Metrics:**
-Validated at 1024-bit parity with a **Topological Entropy floor of ~5.6**, confirming high-stability laminar flow even under saturated entropy conditions.
-
-**Legal Notice:**
-This software and the associated mathematical proofs are the exclusive intellectual property of **Americo Simoes**. Use is restricted to research purposes under the Sovereign Research License (SRL). No commercial redistribution or reproduction of the SIM engine is permitted without express written consent.
-
-Refer to `/docs/Sovereign_Complete.pdf` for full technical derivations.
-
+## ## 2. Repository Structure
