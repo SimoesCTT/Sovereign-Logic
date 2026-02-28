@@ -1,0 +1,16 @@
+{
+    "engine": "Sovereign-Logic",
+    "version": "1.0.2-Apex",
+    "lock": "Reihman-Hamiltonian",
+    "parameters": {
+        "beta": 1.23,
+        "lambda": 0.963,
+        "phase_op": 26.829
+    },
+    "verification": {
+        "fedora_signature": "4A327DF669DE42E59159FC512C289D30DD3C1DDB1E76C54DEF2503B95074E5A8",
+        "fidelity_delta_target": 0.0,
+        "resonance_target": 0.7951
+    },
+    "status": "GRANITE-FIRM"
+}
