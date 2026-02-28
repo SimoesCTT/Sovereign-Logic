@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+data/golden_manifold_gen.py
+data/zenith_ingestor.py
+manifold_analyzer/__init__.py
+manifold_analyzer/analyzer.py
+manifold_analyzer/cascade_control.py
+manifold_analyzer/fidelity_check.py
+sovereign_logic.egg-info/PKG-INFO
+sovereign_logic.egg-info/SOURCES.txt
+sovereign_logic.egg-info/dependency_links.txt
+sovereign_logic.egg-info/requires.txt
+sovereign_logic.egg-info/top_level.txt
