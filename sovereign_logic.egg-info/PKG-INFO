@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: sovereign_logic
-Version: 1.0.0
+Version: 1.0.1
 Summary: 1024-bit Unitary Propagator and Quantum-Laminar Mapping Engine
 Author: Americo Simoes
 Requires-Python: >=3.8
