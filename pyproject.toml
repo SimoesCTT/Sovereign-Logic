@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sovereign_logic"
-version = "1.0.1"
+version = "1.0.2"
 authors = [{name = "Americo Simoes"}]
 description = "1024-bit Unitary Propagator and Quantum-Laminar Mapping Engine"
 readme = "README.md"
